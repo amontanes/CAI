@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CAI.db::CV_UsageMetrics_CAI" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" hierarchyGeneration="SQL" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="true">
-<descriptions defaultDescription="Métricas de uso de SAP CAI"/>
+<descriptions defaultDescription="Métricas de uso de SAP CAI."/>
 <localVariables/>
 <variableMappings/>
 <dataSources>
