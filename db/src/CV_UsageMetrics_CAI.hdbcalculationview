@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CAI.db::CV_UsageMetrics_CAI" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" hierarchyGeneration="SQL" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="true">
+<descriptions defaultDescription="Métricas de uso de SAP CAI"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="METRICACAI_METRICACAI">
+    <resourceUri>METRICACAI_METRICACAI</resourceUri>
+  </DataSource>
+</dataSources>
+<snapshotProcedures/>
+<calculationViews/>
+
+<logicalModel id="METRICACAI_METRICACAI">
+  <attributes>
+    <attribute id="DATE" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATE"/>
+      <keyMapping columnObjectName="METRICACAI_METRICACAI" columnName="DATE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="CONVERSATIONS_WEB" order="2" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="CONVERSATIONS_WEB"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="CONVERSATIONS_WEB"/>
+    </measure>
+    <measure id="MESSAGE_RECEIVED_WEB" order="3" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="MESSAGE_RECEIVED_WEB"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="MESSAGE_RECEIVED_WEB"/>
+    </measure>
+    <measure id="MESSAGES_SENT_WEB" order="4" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="MESSAGES_SENT_WEB"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="MESSAGES_SENT_WEB"/>
+    </measure>
+    <measure id="PARTICIPANTS_WEB" order="5" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="PARTICIPANTS_WEB"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="PARTICIPANTS_WEB"/>
+    </measure>
+    <measure id="CONVERSATIONS_WHATSAPP" order="6" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="CONVERSATIONS_WHATSAPP"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="CONVERSATIONS_WHATSAPP"/>
+    </measure>
+    <measure id="MESSAGE_RECEIVED_WHATSAPP" order="7" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="MESSAGE_RECEIVED_WHATSAPP"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="MESSAGE_RECEIVED_WHATSAPP"/>
+    </measure>
+    <measure id="MESSAGES_SENT_WHATSAPP" order="8" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="MESSAGES_SENT_WHATSAPP"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="MESSAGES_SENT_WHATSAPP"/>
+    </measure>
+    <measure id="PARTICIPANTS_WHATSAPP" order="9" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="PARTICIPANTS_WHATSAPP"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="PARTICIPANTS_WHATSAPP"/>
+    </measure>
+    <measure id="CONVERSATIONS_TELEGRAM" order="10" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="CONVERSATIONS_TELEGRAM"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="CONVERSATIONS_TELEGRAM"/>
+    </measure>
+    <measure id="MESSAGE_RECEIVED_TELEGRAM" order="11" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="MESSAGE_RECEIVED_TELEGRAM"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="MESSAGE_RECEIVED_TELEGRAM"/>
+    </measure>
+    <measure id="MESSAGES_SENT_TELEGRAM" order="12" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="MESSAGES_SENT_TELEGRAM"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="MESSAGES_SENT_TELEGRAM"/>
+    </measure>
+    <measure id="PARTICIPANTS_TELEGRAM" order="13" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="PARTICIPANTS_TELEGRAM"/>
+      <measureMapping columnObjectName="METRICACAI_METRICACAI" columnName="PARTICIPANTS_TELEGRAM"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+    
+  </shapes>
+</layout>
+</Calculation:scenario>

@@ -1,0 +1,7 @@
+{
+  "CAI.db::MetricasCAI": {
+    "target": {
+      "object": "METRICACAIMODEL_METRICACAI"
+    }
+  }
+}
